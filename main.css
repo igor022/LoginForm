@@ -81,7 +81,7 @@ header a:hover {
     max-height: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
     .signin-img {
         display: block;
         height: 350px;
@@ -104,8 +104,7 @@ header a:hover {
 
 form {
     font-size: 12px;
-    width: 250px;
-    height: 300px;
+    min-width: 250px;
     background-color: white;
     color: #888888;
     padding: 25px;
