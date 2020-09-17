@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 36px;
     line-height: 20px;
     font-weight: 400;
     background-color: #DDDDDD;
@@ -60,6 +60,7 @@ header a:hover {
 .container {
     margin-top: 50px;
     flex: 1 0 auto;
+    width: 85%;
 }
 
 .content {
@@ -82,6 +83,19 @@ header a:hover {
 }
 
 @media only screen and (min-width: 992px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    .container {
+        margin-top: 50px;
+        flex: 1 0 auto;
+        width: auto;
+    }
+
     .signin-img {
         display: block;
         height: 350px;
@@ -104,7 +118,7 @@ header a:hover {
 
 form {
     font-size: 12px;
-    min-width: 250px;
+    width: 280px;
     background-color: white;
     color: #888888;
     padding: 25px;
@@ -169,6 +183,7 @@ form a {
 /* Footer */
 
 footer {
+    width: 100%;
     background-color: #222B36;
     color: #F2F4F9;
     font-weight: 300;
