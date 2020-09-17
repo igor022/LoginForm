@@ -1,3 +1,7 @@
+html, body{
+    height: 100%;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -5,7 +9,21 @@ body {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-    background-color: #F2F4F9;
+    background-color: #DDDDDD;
+    /*
+    background: linear-gradient(#648880, #293f50);
+    */
+    display: flex;
+    flex-direction: column;
+}
+
+.container,
+.header-content,
+.footer-content {
+    padding: 0 30px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -40,29 +58,59 @@ header a:hover {
 }
 
 .container {
-    margin-top: 40px;
-    background: linear-gradient(#648880, #293f50);
+    margin-top: 50px;
+    flex: 1 0 auto;
 }
 
 .content {
     max-width: 100%;
-    padding: 40px;
+    padding: 50px 40px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 300px;
 }
 
-.content img {
-    display: block;
-    width: 100%;
+.signin-img {
+    display: none;
+    align-self: center;
+    height: 300px;
+    max-width: 60%;
+}
+
+.signin-img img {
+    max-height: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .signin-img {
+        display: block;
+        height: 350px;
+        max-width: 60%;
+    }
+    
+    .signin-img img {
+        align-self: center;
+        max-height: 100%;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 50px 40px;
+        display: flex;
+        justify-content: flex-end;
+        min-height: 300px;
+    }
 }
 
 form {
-    max-width: 300px;
+    font-size: 12px;
+    width: 250px;
+    height: 300px;
     background-color: white;
     color: #888888;
     padding: 25px;
     text-align: center;
+    align-self: center;
 }
 
 h3 {
@@ -73,7 +121,7 @@ h3 {
 
 .input-block {
     display: block;
-    background-color: #EAEAED;
+    background-color: #EEEEEE;
     width: 95%;
     margin: 0 0 10px 0;
     padding: 0 2.5%;
@@ -122,12 +170,12 @@ form a {
 /* Footer */
 
 footer {
-
     background-color: #222B36;
     color: #F2F4F9;
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
+    flex-shrink: 0;
 }
 
 .logo h3 {
@@ -201,3 +249,4 @@ a:hover {
 .bottom-footer .terms a {
     margin: 0 10px;
 }
+
